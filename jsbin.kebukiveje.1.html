@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2025 by anonymous (http://jsbin.com/kebukiveje/1/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+<body>
+
+<script id="jsbin-javascript">
+var ingreso = 0;
+
+while(ingreso < 3 || ingreso > 6){
+  ingreso = prompt("ingresa un numero entre 3 y 6");
+  
+  ingreso = Number(ingreso);
+  
+  if(ingreso < 3 || ingreso > 6){
+    alert("ingreso es menor ")
+  }else{
+    alert("ingreso es mayor ")
+  }
+}
+var aleatorio = Math.floor(Math.random() * 9) + 1; 
+alert("numero generado por la computadora;", aleatorio)
+
+var adivina = prompt("¿el numero ingresado es mayor, menor o igual?")
+  adivina = adivina.toLowerCase();
+
+if(adivina === "mayor"){
+  if(ingreso > aleatorio){
+    alert("correcto el numero ingresado es mayor")
+  }else{
+    alert("incorrecto el numero ingresado no es mayor")
+  }
+}else if(adivina === "menor"){
+  if(ingreso < aleatorio){
+    alert("correcto el numero ingresado es menor")
+  }else{
+    alert("incorrecto el numero ingresao no es menor")
+  }
+}else if(adivina === "igual"){
+  if(ingreso === aleatorio){
+    alert("¡felicidades! el numero ingresado es igual")
+  }else{
+    alert("incorrecto. el numero ingresado no es igual")
+  }
+}else{
+  alert("la adivinanza no es valida. por ingrese de nuevo")
+}
+  
+
+
+
+    
+</script>
+</body>
+</html>
